@@ -1,16 +1,13 @@
-package br.com.marketplace.order.domain.product;
+package br.com.marketplace.order.domain.order.purchase;
+
 
 import br.com.marketplace.shared.domain.tactical_ddd.Identifier;
 
-public record ProductID(Long value)
+public record OrderID(Long value)
         implements Identifier<Long> {
 
     @Override
     public Long getValue() {
         return this.value;
-    }
-
-    public static ProductID with(Long value) {
-        return new ProductID(value);
     }
 }
