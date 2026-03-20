@@ -5,4 +5,12 @@ public record CreateOrderCommand(
         Long productId,
         Integer quantity
 ) {
+
+    public static CreateOrderCommand with(
+            Long customerId,
+            Long productId,
+            Integer quantity
+    ) {
+        return new CreateOrderCommand(customerId, productId, quantity);
+    }
 }

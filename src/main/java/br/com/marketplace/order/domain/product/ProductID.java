@@ -10,7 +10,7 @@ public record ProductID(Long value)
         return this.value;
     }
 
-    public static ProductID with(Long value) {
+    public static ProductID from(final Long value) {
         return new ProductID(value);
     }
 }

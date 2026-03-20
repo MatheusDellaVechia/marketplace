@@ -14,7 +14,7 @@ public record OrderCreatedEvent(
 ) implements DomainEvent {
 
     public OrderCreatedEvent {
-        if (this.occurredOn == null) {
+        if (occurredOn == null) {
             occurredOn = Instant.now();
         }
     }
